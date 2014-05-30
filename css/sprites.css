@@ -1,0 +1,34 @@
+
+.chrome {
+	width: 171px;
+	height: 171px;
+	background-position: -0px 0;
+}
+
+.facebook {
+	width: 267px;
+	height: 267px;
+	background-position: -171px 0;
+}
+
+.twitter {
+	width: 172px;
+	height: 140px;
+	background-position: -438px 0;
+}
+
+.no-svg .chrome,
+.no-svg .facebook,
+.no-svg .twitter {
+	display: inline-block;
+	background-image: url("../sprites/png-sprite.png");
+	background-size: 609px 267px;
+}
+
+.chrome,
+.facebook,
+.twitter {
+	display: inline-block;
+	background-image: url("../sprites/svg-sprite.svg");
+	background-repeat: no-repeat;
+}

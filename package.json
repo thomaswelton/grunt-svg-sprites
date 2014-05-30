@@ -1,0 +1,23 @@
+{
+  "name": "grunt-svg-sprites-demo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomaswelton/grunt-svg-sprites.git"
+  },
+  "author": "Thomas Welton <thomaswelton@me.com> (http://thomaswelton.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomaswelton/grunt-svg-sprites/issues"
+  },
+  "homepage": "https://github.com/thomaswelton/grunt-svg-sprites",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-svg-sprites": "^0.1.0"
+  }
+}

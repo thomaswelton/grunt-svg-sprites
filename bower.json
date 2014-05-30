@@ -1,0 +1,25 @@
+{
+  "name": "grunt-svg-sprites",
+  "version": "0.1.0",
+  "homepage": "https://github.com/thomaswelton/grunt-svg-sprites",
+  "authors": [
+    "thomaswelton <thomaswelton@me.com>"
+  ],
+  "description": "Grunt plugin to create SVG & PNG Sprites",
+  "keywords": [
+    "grunt",
+    "svg",
+    "png",
+    "sprite"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
