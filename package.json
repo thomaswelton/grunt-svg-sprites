@@ -39,7 +39,7 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "gulp-svg-sprites": "^0.1.2",
+    "gulp-svg-sprites": "git://github.com/thomaswelton/gulp-svg-sprites.git#1.0.0",
     "svg2png": "^1.1.0"
   }
 }
