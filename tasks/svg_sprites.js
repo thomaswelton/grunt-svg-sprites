@@ -41,16 +41,16 @@ module.exports = function (grunt) {
             options = this.options({
                 classNameSuffix: '',
                 svg: {
-                    sprite: "sprites/svg-sprite.svg"
+                    sprite: 'sprites/svg-sprite.svg'
                 },
-                className: ".%f",
-                svgId:     "%f",
-                cssFile:   "css/sprites.css",
-                svgPath:   "../%f",
-                pngPath:   "../%f",
+                className: '.%f',
+                svgId:     '%f',
+                cssFile:   'css/sprites.css',
+                svgPath:   '../%f',
+                pngPath:   '../%f',
                 preview: {
-                    sprite: "preview-svg-sprite.html",
-                    defs: "preview-svg.html"
+                    sprite: 'preview-svg-sprite.html',
+                    defs: 'preview-svg.html'
                 },
                 refSize: 26,
                 padding: 0,
@@ -62,6 +62,10 @@ module.exports = function (grunt) {
 
         // Load in all images from the src
         srcFiles = grunt.file.expand(src);
+        if (!srcFiles.length) {
+            grunt.log.writeln('No matched files');
+            return;
+        }
 
         srcFiles.forEach(function (file) {
             var contents = grunt.file.read(file),
@@ -104,7 +108,7 @@ module.exports = function (grunt) {
 
         svg2png(svgPath, pngPath, function (err) {
             if (err) {
-                grunt.fail.fatal("Could not create the PNG format");
+                grunt.fail.fatal('Could not create the PNG format');
             }
         });
 
